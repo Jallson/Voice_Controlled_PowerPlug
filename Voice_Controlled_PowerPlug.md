@@ -54,15 +54,15 @@ Open studio.edgeimpulse.com in a browser, and sign in, or create a new account i
 PS: With over 4 hours of audio data sets, multiple classes and higher performance settings to build model, this project uses an Enterprise account for more capable and faster results.
 
 ![Image03.png](Image03.png)
-![Image04.png](https://www.dropbox.com/scl/fi/2qmcaslxe84lb5nly5m6c/Image04.png?rlkey=42zuopkuhgh545ccu7eu6il3k&dl=0)
+![Image04.png](Image04.png)
 
 
 #### 2. Split and Balancing
 
 Click on a data sample that was collected, then click on the 3 dots to open the menu, and finally choose Split sample. Set the segment length to 1000 ms (1 second), or add segments manually, then click Split. Repeat this process until all samples are labelled in 1 second intervals. Make sure the comparison between one, two, three, four, on, off and unknown data is quite balanced, and the ratio between training and test data is around 80/20.
 
-![Image05.png](https://www.dropbox.com/scl/fi/6t1py5wtytwyiztc7c0jo/Image05.png?rlkey=1py2qgu4c090p4jipx568qzp1&dl=0)
-![Image06.png](https://www.dropbox.com/scl/fi/cd2xgyraj5qr724eiw74j/Image06.png?rlkey=pnos5lcri2hculnuw4wvjga78&dl=0)
+![Image05.png](Image05.png)
+![Image06.png](Image06.png)
 
 
 #### 3. Train and build the model (Syntiant)
@@ -70,19 +70,19 @@ Click on a data sample that was collected, then click on the 3 dots to open the 
 Choose Create Impulse, set Window size to 968ms, then add an Audio (Syntiant) Processing block, and choose Classifier for the Learning block, then Save Impulse. In the Syntiant parameters, choose log-bin (NDP120/200) then click Save. Set the training to around 50 cycles with 0.0005 Learning rate, and choose Dense Network with Dropout rate around 0.5, then click Start train. It will take a short while, but you can see the progress of the training on the right. If the results show a figure of around 80% accuracy upon completion, then we can most likely proceed to the next stage.
 Now we can test the model in Live classification, or choose Model testing to test with the data that was set aside earlier (the 80/20 split), and click Classify all. If the result is quite good -- around 80% accuracy, then we can move to the next step -- Deployment.
 
-![Image07.png](https://www.dropbox.com/scl/fi/zeadwuz3fq7f2us7uxpmr/Image07.png?rlkey=4llzf98nfekxl8iebqbifpf4c&dl=0)
-![Image08.png](https://www.dropbox.com/scl/fi/rb3fgee6dcg5uc6p878oy/Image08.png?rlkey=hzf1jx9szxj9b9c2bpjmiqex9&dl=0)
-![Image09.png](https://www.dropbox.com/scl/fi/jycihba5kzwa0h7nm00de/Image09.png?rlkey=wm62iubhxlmefwcfq51pqx7xz&dl=0)
-![Image10.png](https://www.dropbox.com/scl/fi/vs9n7i4efhnurxfc1kava/Image10.png?rlkey=8tsco80j4h8zjukzl697nehd2&dl=0)
-![Image11.png](https://www.dropbox.com/scl/fi/ljm3noi9cj2f65h9f76rv/Image11.png?rlkey=ntb4xsrz7ibhvw7qg6ixldgtr&dl=0)
+![Image07.png](Image07.png)
+![Image08.png](Image08.png)
+![Image09.png](Image09.png)
+![Image10.png](Image10.png)
+![Image11.png](Image11.png)
 
 #### 4. Deploy to Nicla Voice
 
 For a Syntiant NDP device like the Nicla Voice, we can configure the posterior parameters (in this case tick all labels except zzz). To run your Impulse locally on the Arduino Nicla Voice, you should type and choose Nicla Voice in the Deployment tab, then click Build. The binary firmware will start building and automatically download to your computer once it is complete, and instruction how to flash video will pop-up. Flash this firmware to Nicla Voice as instructed. Now you can run this model in Terminal for live classification.
 
-![Image12.png](https://www.dropbox.com/scl/fi/iak3dyy8iy52lx3jt7ept/Image12.png?rlkey=1nn3j2vmhb1ctsews4l41yax6&dl=0)
-![Image13.png](https://www.dropbox.com/scl/fi/vrz1fycckztks5y5ddn9w/Image13.png?rlkey=aey7gaa6qf73ubkd893o7bsa1&dl=0)
-![Image14.png](https://www.dropbox.com/scl/fi/581le95n50xcbnomlf4ak/Image14.png?rlkey=uuemtb9psu8woql26p61b3lvc&dl=0)
+![Image12.png](Image12.png)
+![Image13.png](Image13.png)
+![Image14.png](Image14.png)
 
 #### 5. Upload the Arduino Code
 
@@ -91,7 +91,7 @@ Upload this code https://github.com/Jallson/Voice_Controlled_PowerPlug/blob/main
 Pro Micro:
 Upload this code https://github.com/Jallson/Voice_Controlled_PowerPlug/blob/main/relayvoice_promicro.ino to the Pro Micro using the Arduino IDE. The code receives the incoming byte via I2C and will switch on or off the relay based on the values of the data received from the Nicla Voice.
 
-![Image15.png](https://www.dropbox.com/scl/fi/mv8uyfemg8dd7qiy7ahw6/Image15.png?rlkey=5zligbtsxbpy5i6nzeo9a23zr&dl=0)
+![Image15.png]
 
 ### Conclusion:
 
