@@ -91,7 +91,7 @@ Upload this code https://github.com/Jallson/Voice_Controlled_PowerPlug/blob/main
 Pro Micro:
 Upload this code https://github.com/Jallson/Voice_Controlled_PowerPlug/blob/main/relayvoice_promicro.ino to the Pro Micro using the Arduino IDE. The code receives the incoming byte via I2C and will switch on or off the relay based on the values of the data received from the Nicla Voice.
 
-![Image15.png]
+![Image15.png](Image15.png)
 
 ### Conclusion:
 
