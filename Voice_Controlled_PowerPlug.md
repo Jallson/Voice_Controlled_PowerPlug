@@ -1,7 +1,7 @@
 ## Non IoT Voice Controlled Power Plug with Syntiant NDP120 (Nicla Voice)
 by Jallson Suryo
 
-![Image00.png](https://www.dropbox.com/scl/fi/vyurj76z3jbmtn7fu7juc/Image00.png?rlkey=7h0joapk2otkzz5hncaqk3ivv&dl=0)
+![Image00.png](IMAGES/Image00.png)
 
 Project link: https://studio.edgeimpulse.com/public/297564/latest
 
