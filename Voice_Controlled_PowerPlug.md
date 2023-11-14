@@ -1,7 +1,7 @@
 ## Non IoT Voice Controlled Power Plug with Syntiant NDP120 (Nicla Voice)
 by Jallson Suryo
 
-![Image00.png](IMAGES/Image00.png)
+![Image00.png](Image00.png)
 
 Project link: https://studio.edgeimpulse.com/public/297564/latest
 
@@ -24,7 +24,7 @@ Devices with those embedded ML model will accept voice commands but won’t need
 
 This project will use some relays and power-strip that are connected to various appliances such as lamp, fan, TV, etc. A Nicla Voice with ML embedded which has been trained to recognize various keywords like: one, two, three, four, on, and off is the center of the decision process. From Nicla Voice we use the I2C protocol which is connected to the Arduino pro-micro to carry out voice commands from Nicla Voice and forwarded to the relays which control power sockets.
 
-![Image01.png](https://www.dropbox.com/scl/fi/kx4007qizhfh6b7g60h46/Image01.png?rlkey=dgnbl6ku4ynnfc4dilpgevrwx&dl=0)
+![Image01.png](Image01.png)
 
 #### Hardware Component:
 
@@ -36,7 +36,7 @@ This project will use some relays and power-strip that are connected to various 
 - Cable for 110/220V
 - Powerstrip (4 sockets)
 
-![Image02.png](https://www.dropbox.com/scl/fi/qc2dalm102emjhuzu0f0d/Image02.png?rlkey=3ttjo0qimi49o7p241kd4f7ja&dl=0)
+![Image02.png](Image02.png)
 
 
 #### Software & Online Services:
@@ -53,7 +53,7 @@ Before we start, we need to install the Arduino CLI and Edge Impulse tooling on 
 Open studio.edgeimpulse.com in a browser, and sign in, or create a new account if you do not have one. Click on New project, then in Data acquisition, click on the Upload Data icon for uploading .wav files (e.g. from Kaggle, Google Speech Commands Dataset, etc.). Other methods to collect data are from devices such as a connected smartphone with QR code link, or a connected Nicla Voice with Edge Impulse audio firmware flashed to it. For ease of labelling, when collecting or uploading data, fill in the name according to the desired label, for example one, two, three, on, off, or zzz for words or sound that can be ignored.
 PS: With over 4 hours of audio data sets, multiple classes and higher performance settings to build model, this project uses an Enterprise account for more capable and faster results.
 
-![Image03.png](https://www.dropbox.com/scl/fi/amfkqd3jho1o3y6mu79yd/Image03.png?rlkey=ad5i27b30jz46i27he0sfpov7&dl=0)
+![Image03.png](Image03.png)
 ![Image04.png](https://www.dropbox.com/scl/fi/2qmcaslxe84lb5nly5m6c/Image04.png?rlkey=42zuopkuhgh545ccu7eu6il3k&dl=0)
 
 
